@@ -310,23 +310,6 @@ section{
   text-decoration: underline;
   color:#331E1C;
 }
-/*.projpage-desc  a::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: -1px;
-  left: 0;
-  background-color: #000;
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.projpage-desc  a:hover::before {
-  visibility: visible;
-  transform: scaleX(1);
-}*/
 .personal .item, .about .item, .contact .item, .proj-page .item{
   width:48%;
   margin-bottom: 4%;
@@ -584,17 +567,14 @@ textarea{
   transition:all 0.7s ease;
   overflow:hidden;
   color:white;
-  /*transition: all 1.5s ease;*/
 }
 .proj-link{
   background-color: #3C402A;
   transition:all 0.7s ease;
 }
 .arrow{
-  /*display: block;*/
   width: 3vw;
   max-width: 25px;
-  /*padding-left: 10%;*/
   position: relative;
   right: 0;
   display: none;
@@ -677,7 +657,7 @@ a.disabled{
   flex-direction: row;
   justify-content: flex-start;
   /*width:40%;*/
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .categories p{
   width:unset;
@@ -846,7 +826,7 @@ a.disabled{
     font-size: 3.8vw;
   }
   .categories{
-    font-size: .8em;
+    /*font-size: .8em;*/
   }
   h2{
     font-size:4vw;
@@ -854,7 +834,7 @@ a.disabled{
   .nav-list {
     position: absolute;
     margin:0;
-    width: 40%;
+    width: 50%;
     right:0;
     /*height:60vh;*/
     top:0;
@@ -874,6 +854,12 @@ a.disabled{
     /*padding:20px 0px;*/
     margin: 20px 45px;
   }
+  .nav-list a:first-child{
+    margin-top:33px;
+  }
+  .nav-list a:last-child{
+    margin-bottom:33px;
+  }
   .nav-list li{
     opacity: 0;
   }
@@ -884,7 +870,16 @@ a.disabled{
   nav{
     background-color: white;
     padding:20px 0px;
+    z-index: 1000;
     /*transition: transform 0.5s ease-in;*/
+    /*overflow-x: hidden;*/
+  }
+  div.navcontainer{
+    /*overflow-x: hidden;*/
+    width: 100%;
+    position: relative;
+    top:0;
+    left:0;
   }
   .burger{
     display: block;
@@ -942,8 +937,12 @@ a.disabled{
     font-size: 1em;
   }
   .proj-description{
-    font-size:2vw;
+    font-size:1em;
   }
+.resume-button{
+  margin:0px 30px -10px 30px;
+  justify-content: center;
+}
   .contact .item{
     width:100%;
   }
