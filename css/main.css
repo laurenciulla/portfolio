@@ -488,6 +488,7 @@ label.first-label{
 }
 input{
   font-weight: 300;
+  border-radius: 0;
 }
 .form-control{
   width:100%;
