@@ -449,6 +449,9 @@ form{
   margin-top:0;
   max-height:300px;
 }
+.test{
+  width: 100%;
+}
 .logo-container img{
   display: block;
   width: 60%;
