@@ -101,17 +101,25 @@ textarea {
 }
 
 .pa{
-  /*background-image: url('../img/cover-webex.jpg');*/
-  /*background-image: url('../img/proj-pages/webex-mockup.jpg');*/
   background-image: url('../img/proj-pages/PA-multiscreen-mockup.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
+.hc{
+  background-image: url('../img/proj-pages/HC-mockup.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.characters{
+  background-image: url('../img/proj-pages/Characters-mockup.jpg');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 
 .thesis{
-  /*background-image: url('../img/cover-thesis.jpg');*/
   background-image: url('../img/proj-pages/thesis-mockup-5.jpg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -441,7 +449,7 @@ form{
   width:100%;
   margin:0px 0px 40px 0px;
 }
-.food-container, .cart-container, .logo-container{
+.food-container, .cart-container, .logo-container, .people-container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -460,14 +468,21 @@ form{
   width: 23%;
   max-height: 100px;
 }
+.people-container img{
+  display: block;
+  width: 28%;
+  margin-top: -30px;
+}
+.character2{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  margin-right: 10px;
+}
 .cart-container img{
   display: block;
   width: 50%;
   margin-top:0;
   max-height:300px;
-}
-.test{
-  width: 100%;
 }
 .logo-container img{
   display: block;
