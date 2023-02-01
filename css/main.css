@@ -106,6 +106,12 @@ textarea {
   background-repeat: no-repeat;
 }
 
+.pub{
+  background-image: url('../img/proj-pages/pub-mockup-5.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .hc{
   background-image: url('../img/proj-pages/HC-mockup.jpg');
   background-size: contain;
