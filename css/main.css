@@ -442,7 +442,7 @@ form{
 .food-container, .cart-container, .logo-container, .people-container{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -456,8 +456,8 @@ form{
 }
 .food-container img{
   display: block;
-  width: 23%;
-  max-height: 100px;
+  width: 25%;
+  max-height: 150px;
 }
 .people-container img{
   display: block;
@@ -471,9 +471,9 @@ form{
 }
 .cart-container img{
   display: block;
-  width: 50%;
+  width: 70%;
   margin-top:0;
-  max-height:300px;
+  max-height:400px;
 }
 .logo-container img{
   display: block;
